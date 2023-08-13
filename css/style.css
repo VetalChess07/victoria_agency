@@ -24,6 +24,7 @@
   font-style: normal;
 }
 
+.exchange__inner .exchange__inner-controls-item .exchange__search .exchange__search-btn,
 .container__work .work__inner .work__item-btn,
 .swiper-wrapper .slide__intro .slide__intro-block .slide__intro-btn {
   border-radius: 3px;
@@ -39,6 +40,7 @@
   transition: all 0.5s;
 }
 
+.exchange__inner .exchange__inner-controls-item .exchange__search .exchange__search-btn:hover,
 .container__work .work__inner .work__item-btn:hover,
 .swiper-wrapper .slide__intro .slide__intro-block .slide__intro-btn:hover {
   background: #fff;
@@ -295,6 +297,17 @@ input[type=checkbox] {
   width: 20px;
   height: 20px;
   margin: 5px 30px 0 10px;
+}
+
+.formworker__title {
+  margin: 40px 0 10px 0;
+}
+
+textarea {
+  color: #018ABE;
+  border: 1px solid #018ABE;
+  font-size: 20px;
+  padding: 10px;
 }
 
 .form__page-item {
@@ -1080,7 +1093,11 @@ input[type=submit]:hover {
       flex-wrap: wrap;
 }
 
-.workdescription__revies {
+.form__page-title {
+  margin: 15px 0 2px 0;
+}
+
+.exchange__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1088,30 +1105,16 @@ input[type=submit]:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.workdescription__revies .workdescription__revies-title {
-  text-align: center;
-  margin: 30px 0;
-}
-
-.workdescription__revies .workdescription__revies-item {
-  margin-top: 20px;
-  padding: 25px 18px;
-  border: 2px solid #fff;
-  background: #018ABE;
-  border-radius: 20px;
+.exchange__inner .exchange__inner-controls {
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1120,50 +1123,99 @@ input[type=submit]:hover {
           align-items: center;
 }
 
-.workdescription__revies .workdescription__revies-item .workdescription__revies-date {
-  border: 2px solid #fff;
-  background: #162831;
-  padding: 3px 5px;
-  border-radius: 5px;
+.exchange__inner .exchange__inner-controls-item {
+  width: 40%;
 }
 
-.workdescription__revies .workdescription__revies-item .workdescription__revies-link {
+.exchange__inner .exchange__inner-controls-item .exchange__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+.exchange__inner .exchange__inner-controls-item .exchange__search .exchange__search-select {
   width: 100%;
-  text-align: right;
+  padding: 0;
+  border: none;
+  border: 2px solid #018ABE;
+  outline: none;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.exchange__inner .exchange__inner-controls-item .exchange__search .exchange__search-btn {
+  font-size: 20px;
+  padding: 5px;
+  width: 50px;
+}
+
+.exchange__inner .exchange__item {
+  margin-top: 60px;
+  padding: 20px 18px 10px 18px;
+  border: 1px solid #018ABE;
+  border-radius: 20px;
+}
+
+.exchange__inner .exchange__item.hide {
+  display: none;
+}
+
+.exchange__inner .exchange__item .exchange__item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 10px;
 }
 
-.workdescription__revies .workdescription__revies-item .workdescription__revies-content .workdescription__revies-text {
-  margin: 10px 0;
+.exchange__inner .exchange__item .exchange__item-content p {
+  width: 40%;
 }
 
-.workdescription__revies .workdescription__revies-item .workdescription__box-star {
+.exchange__inner .exchange__item .exchange__item-content .exchange__item-img {
+  border-radius: 10px;
+  max-width: 400px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.exchange__inner .exchange__item .exchange__item-content span {
+  color: #018ABE;
+  font-size: 20px;
+}
+
+.exchange__inner .exchange__item .exchange__item-content .exchange__item-title {
+  max-width: 500px;
+  padding: 5px 10px;
+}
+
+.exchange__inner .exchange__item .exchange__item-content .exchange__item-price {
+  color: tomato;
+  font-size: 28px;
+}
+
+.exchange__inner .exchange__item .exchange__item-content .exchange__item-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   width: 100%;
-  max-width: 250px;
-  margin-top: 30px;
-}
-
-.workdescription__revies .workdescription__revies-item .workdescription__box-star .workdescription__box-star-img {
-  width: 32px;
-  height: 32px;
-}
-
-.workdescription__revies .workdescription__revies-item .workdescription__box-star .workdescription__box-counter {
-  font-size: 25px;
-  font-weight: bold;
-  -webkit-transform: translateY(8px);
-      -ms-transform: translateY(8px);
-          transform: translateY(8px);
-}
-
-.form__page-title {
-  margin: 15px 0 2px 0;
 }
 
 @media (max-width: 980px) {
@@ -1455,6 +1507,57 @@ input[type=submit]:hover {
     font-size: 20px;
     padding: 10px 6px;
   }
+
+  .exchange__inner .exchange__inner-controls {
+    margin-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .exchange__inner .exchange__inner-controls-item {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .exchange__inner .exchange__inner-controls-item .exchange__search .exchange__input-search:focus {
+    width: 100%;
+  }
+
+  .exchange__inner .exchange__item {
+    margin-top: 20px;
+  }
+
+  .exchange__inner .exchange__item .exchange__item-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .exchange__inner .exchange__item .exchange__item-content .exchange__item-img {
+    max-width: 300px;
+    height: 90px;
+  }
+
+  .exchange__inner .exchange__item .exchange__item-content span {
+    font-size: 18px;
+  }
+
+  .exchange__inner .exchange__item .exchange__item-content .exchange__item-title {
+    width: 100%;
+    padding: 5px 10px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .exchange__inner .exchange__item .exchange__item-content .exchange__item-price {
+    font-size: 18px;
+  }
+
+  .exchange__inner .exchange__item .exchange__item-content .exchange__item-btn {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -1579,30 +1682,39 @@ input[type=submit]:hover {
     font-size: 16px;
   }
 
-  .workdescription__revies .workdescription__revies-item {
-    padding: 16px 8px;
+  .exchange__inner .exchange__item .exchange__item-content {
+    gap: 5px;
+    margin-top: 0;
   }
 
-  .workdescription__revies .workdescription__revies-item .workdescription__revies-link {
-    text-align: center;
-    margin-top: 12px;
+  .exchange__inner .exchange__item .exchange__item-content p {
+    font-size: 8px;
+    line-height: normal;
   }
 
-  .workdescription__revies .workdescription__revies-item .workdescription__box-star {
-    margin: 10px auto;
+  .exchange__inner .exchange__item .exchange__item-content .exchange__item-img {
     max-width: 180px;
+    height: 70px;
   }
 
-  .workdescription__revies .workdescription__revies-item .workdescription__box-star .workdescription__box-star-img {
-    width: 25px;
-    height: 25px;
+  .exchange__inner .exchange__item .exchange__item-content span {
+    font-size: 10px;
   }
 
-  .workdescription__revies .workdescription__revies-item .workdescription__box-star .workdescription__box-counter {
+  .exchange__inner .exchange__item .exchange__item-content .exchange__item-text {
+    font-size: 8px;
+    line-height: normal;
+    margin: 4px 0;
+  }
+
+  .exchange__inner .exchange__item .exchange__item-content .exchange__item-title {
+    padding: 0;
     font-size: 12px;
-    -webkit-transform: translateY(15px);
-        -ms-transform: translateY(15px);
-            transform: translateY(15px);
+  }
+
+  .exchange__inner .exchange__item .exchange__item-content .exchange__item-price {
+    text-align: center;
+    font-size: 8px;
   }
 }
 
